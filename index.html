@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Justine Rose E. Dominggono — Frontend Developer, UI Designer & Graphic Designer based in Ormoc City, Philippines." />
+  <title>Justine Rose E. Dominggono — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Home">JRD</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#why">Why Me</a></li>
+      <li><a href="#contact">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#interests">Interests</a>
+    <a href="#why">Why Me</a>
+    <a href="#contact">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-text fade-in">
+      <span class="hero-eyebrow">Available for work</span>
+      <h1 class="hero-name">Justine Rose<br><em>Dominggono</em></h1>
+      <p class="hero-tagline">
+        <span id="typed-text" aria-live="polite"></span><span class="typed-cursor" aria-hidden="true"></span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap fade-in">
+      <div class="hero-photo-frame">
+        <img
+          src="images/justine.JPG"
+          alt="Justine Rose E. Dominggono — Frontend Developer and UI Designer"
+          class="hero-photo"
+        />
+        <div class="hero-badge-float">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ormoc City, Philippines
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-hint-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="container">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title" id="about-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>I'm a detail-oriented developer and designer with a strong foundation in both the technical and creative sides of digital product development. I enjoy turning ideas into clean, functional interfaces.</p>
+          <p>My objective is to pursue a career where I can apply my skills in graphic design, UI design, frontend development, and programming to create digital experiences that are both beautiful and effective — while continuously growing alongside the teams I work with.</p>
+        </div>
+        <ul class="contact-list fade-in" aria-label="Contact information">
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </span>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <a href="mailto:justineroseedominggono@gmail.com">justineroseedominggono@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </span>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <span>09951484517</span>
+            </div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <span>Ormoc City, Leyte, Philippines</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <p class="section-label">What I Know</p>
+      <h2 class="section-title" id="skills-title">Skills &amp; Tools</h2>
+      <p class="section-desc">A mix of technical depth and creative tooling that lets me take a project from concept to deployment.</p>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Programming Languages</h3>
+          <div class="skill-items">
+            <span class="skill-item">Java</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">HTML</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">PHP</span>
+          </div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+          </div>
+          <h3>Database Management</h3>
+          <div class="skill-items">
+            <span class="skill-item">MySQL</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">Supabase</span>
+          </div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Tools &amp; Software</h3>
+          <div class="skill-items">
+            <span class="skill-item">MS Office</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">VS Code</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">Packet Tracer</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">Figma</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">Canva</span>
+            <span class="skill-dot">●</span>
+            <span class="skill-item">CapCut</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <p class="section-label">My Work</p>
+      <h2 class="section-title" id="projects-title">Latest Designs</h2>
+      <p class="section-desc">Graphic design and UI projects crafted with attention to detail.</p>
+
+      <!-- Slideshow -->
+      <div class="slideshow fade-in" aria-label="Design portfolio slideshow" role="region">
+
+        <!-- Main display -->
+        <div class="slideshow-main">
+          <div class="slideshow-track" id="slideshow-track">
+            <div class="slide"><img src="images/namcheon-house.png"    alt="Namcheon House Korean Restaurant banner" /></div>
+            <div class="slide"><img src="images/matcha-house.png"      alt="Sariwa Grounds Matcha House banner" /></div>
+            <div class="slide"><img src="images/candyland-easter.png"  alt="Candyland Easter Adventure poster" /></div>
+            <div class="slide"><img src="images/summer-activities.png" alt="Summer Activities poster" /></div>
+            <div class="slide"><img src="images/summer-popup.png"      alt="Summer Pop-Up Market poster" /></div>
+            <div class="slide"><img src="images/nspc-2026.png"         alt="NSPC 2026 Delegates welcome poster" /></div>
+            <div class="slide"><img src="images/playnest.png"          alt="Playnest brand banner" /></div>
+          </div>
+          <button class="slide-btn slide-btn--prev" id="slide-prev" aria-label="Previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="slide-btn slide-btn--next" id="slide-next" aria-label="Next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <!-- Counter -->
+          <div class="slide-counter"><span id="slide-current">1</span> / <span id="slide-total">7</span></div>
+        </div>
+
+      </div>
+
+      <!-- Figma Links -->
+      <div class="figma-links fade-in">
+        <h3 class="projects-sub-heading">UI Design — Figma</h3>
+        <div class="figma-links-row">
+
+          <a href="https://www.figma.com/design/scdjSq2HtKYwGn2GuqQYBo/NextInLine-Design?node-id=0-1&t=kMTzEfdtMtnSF0EV-1"
+             target="_blank" rel="noopener noreferrer" class="figma-link-card">
+            <div class="figma-link-icon">
+              <svg width="18" height="18" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5Z" fill="currentColor"/>
+                <path d="M9.5 57A9.5 9.5 0 0 0 19 47.5V38H9.5A9.5 9.5 0 0 0 9.5 57Z" fill="currentColor" opacity=".7"/>
+                <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="currentColor" opacity=".5"/>
+                <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="currentColor" opacity=".3"/>
+                <path d="M19 0V19H28.5A9.5 9.5 0 0 0 19 0Z" fill="currentColor" opacity=".2"/>
+              </svg>
+            </div>
+            <div class="figma-link-text">
+              <span class="figma-link-title">NextInLine Design</span>
+              <span class="figma-link-sub">UI Design · Figma</span>
+            </div>
+            <span class="figma-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </span>
+          </a>
+
+          <a href="https://www.figma.com/design/0UGh89Jt42gNBesTcD0z0D/BLOCSVOTE?node-id=0-1&t=xQzbmlcZHSn2bXvU-1"
+             target="_blank" rel="noopener noreferrer" class="figma-link-card">
+            <div class="figma-link-icon">
+              <svg width="18" height="18" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M19 28.5A9.5 9.5 0 1 1 28.5 19 9.5 9.5 0 0 1 19 28.5Z" fill="currentColor"/>
+                <path d="M9.5 57A9.5 9.5 0 0 0 19 47.5V38H9.5A9.5 9.5 0 0 0 9.5 57Z" fill="currentColor" opacity=".7"/>
+                <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="currentColor" opacity=".5"/>
+                <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="currentColor" opacity=".3"/>
+                <path d="M19 0V19H28.5A9.5 9.5 0 0 0 19 0Z" fill="currentColor" opacity=".2"/>
+              </svg>
+            </div>
+            <div class="figma-link-text">
+              <span class="figma-link-title">BLOCSVOTE</span>
+              <span class="figma-link-sub">UI Design · Figma</span>
+            </div>
+            <span class="figma-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests" aria-labelledby="interests-title">
+    <div class="container">
+      <p class="section-label">What Drives Me</p>
+      <h2 class="section-title" id="interests-title">Interests</h2>
+      <p class="section-desc">The areas I'm most passionate about and love spending time in.</p>
+      <div class="interests-grid">
+        <div class="interest-card fade-in">
+          <div class="interest-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building responsive, performant websites from scratch.</p>
+        </div>
+        <div class="interest-card fade-in">
+          <div class="interest-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>UI Design</h3>
+          <p>Designing clean, intuitive interfaces users love.</p>
+        </div>
+        <div class="interest-card fade-in">
+          <div class="interest-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <h3>Editing</h3>
+          <p>Photo, video, and graphic editing for digital content.</p>
+        </div>
+        <div class="interest-card fade-in">
+          <div class="interest-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3>Computer Tasks</h3>
+          <p>Office productivity and computer-related work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH ME -->
+  <section id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="why-grid">
+
+        <div class="why-photo-wrap fade-in">
+          <img
+            src="images/justine.jpg"
+            alt="Justine Rose E. Dominggono"
+            class="why-photo"
+          />
+        </div>
+
+        <div class="why-content fade-in">
+          <p class="section-label">My Value</p>
+          <h2 class="section-title" id="why-title">Why Work With Me</h2>
+          <p class="why-intro">Here is what you can expect when we work together, beyond just good design and code.</p>
+
+          <ul class="why-list">
+            <li>
+              <span class="why-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              <div><strong>Creative &amp; Detail-Oriented.</strong> I create clean, simple, and user-friendly designs.</div>
+            </li>
+            <li>
+              <span class="why-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </span>
+              <div><strong>Design + Frontend Skills.</strong> I can design interfaces and build websites.</div>
+            </li>
+            <li>
+              <span class="why-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 18v4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M18 12h4"/><path d="m19.07 4.93-2.83 2.83"/></svg>
+              </span>
+              <div><strong>Fast Learner.</strong> I am willing to learn new tools and improve my skills.</div>
+            </li>
+            <li>
+              <span class="why-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <div><strong>Reliable &amp; Responsible.</strong> I communicate well and finish tasks on time.</div>
+            </li>
+            <li>
+              <span class="why-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              </span>
+              <div><strong>Organized &amp; Computer Skilled.</strong> I can handle creative, technical, and office-related tasks efficiently.</div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <p class="section-label">Hire Me</p>
+      <h2 class="section-title" id="contact-title">Let's Work Together</h2>
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <p>Have a project or idea? Let's work together and build something great.</p>
+          <ul class="contact-list" aria-label="Direct contact">
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <a href="mailto:justineroseedominggono@gmail.com">justineroseedominggono@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              </span>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <span>09951484517</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="form-card fade-in">
+          <form id="contact-form" novalidate aria-label="Contact form">
+            <div style="display:none;" aria-hidden="true">
+              <label for="website">Leave this blank</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required aria-required="true" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-required="true" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or question…" required aria-required="true"></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by <strong>Justine Rose E. Dominggono</strong></p>
+    <p style="margin-top:.4rem;">
+      <a href="mailto:justineroseedominggono@gmail.com">justineroseedominggono@gmail.com</a>
+      &nbsp;·&nbsp; 09951484517
+    </p>
+    <p style="margin-top:.6rem;font-size:.78rem;">© <span id="year"></span> All rights reserved.</p>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── EmailJS config ──
+    // Replace these 3 values with your own from emailjs.com
+    const EMAILJS_PUBLIC_KEY  = 'XEvUm0EAmNh4ZHm4t';
+    const EMAILJS_SERVICE_ID  = 'service_x30k98f';
+    const EMAILJS_TEMPLATE_ID = 'template_dmx0w7g';
+
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+    window._emailjsConfig = { serviceId: EMAILJS_SERVICE_ID, templateId: EMAILJS_TEMPLATE_ID };
+  </script>
+
+</body>
+</html>
