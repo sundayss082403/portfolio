@@ -341,3 +341,29 @@
 
   resetAuto();
 })();
+
+
+/* ── 10. WEB PROJECT MINI SLIDESHOW ── */
+(function initWebProjectSlideshow() {
+  document.querySelectorAll('.web-project-imgs').forEach(container => {
+    const slides = Array.from(container.querySelectorAll('.wp-slide'));
+    const dots   = Array.from(container.querySelectorAll('.wp-dot'));
+    const prev   = container.querySelector('.wp-arrow--prev');
+    const next   = container.querySelector('.wp-arrow--next');
+    if (!slides.length) return;
+
+    let current = 0;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current]?.classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current]?.classList.add('active');
+    }
+
+    prev?.addEventListener('click', e => { e.stopPropagation(); goTo(current - 1); });
+    next?.addEventListener('click', e => { e.stopPropagation(); goTo(current + 1); });
+    dots.forEach((d, i) => d.addEventListener('click', e => { e.stopPropagation(); goTo(i); }));
+  });
+})();
