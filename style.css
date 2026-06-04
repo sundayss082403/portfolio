@@ -654,6 +654,7 @@ section { padding: 6rem 1.5rem; }
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
   text-decoration: none;
   color: inherit;
+  align-items: stretch;
 }
 .web-project-card:hover {
   border-color: var(--gold);
@@ -665,16 +666,13 @@ section { padding: 6rem 1.5rem; }
 .web-project-imgs {
   position: relative;
   background: var(--surface);
-  height: 280px;
-  min-height: 280px;
-  max-height: 280px;
   overflow: hidden;
+  min-height: 280px;
 }
 
 .wp-slides {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  position: absolute;
+  inset: 0;
 }
 
 .wp-slide {
@@ -686,7 +684,7 @@ section { padding: 6rem 1.5rem; }
   opacity: 0;
   transition: opacity .45s ease;
 }
-.wp-slide.active { opacity: 1; position: absolute; }
+.wp-slide.active { opacity: 1; }
 
 /* Arrow buttons */
 .wp-arrow {
@@ -795,7 +793,7 @@ section { padding: 6rem 1.5rem; }
 
 @media (max-width: 680px) {
   .web-project-card { grid-template-columns: 1fr; }
-  .web-project-imgs { height: 220px; min-height: 220px; max-height: 220px; }
+  .web-project-imgs { min-height: 220px; height: 220px; }
 }
 
 /* ── INTERESTS ── */
