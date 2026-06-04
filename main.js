@@ -367,3 +367,37 @@
     dots.forEach((d, i) => d.addEventListener('click', e => { e.stopPropagation(); goTo(i); }));
   });
 })();
+
+
+/* ── 11. LIGHTBOX ── */
+(function initLightbox() {
+  const lightbox   = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn   = document.getElementById('lightbox-close');
+  if (!lightbox) return;
+
+  function open(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Click on any wp-slide image
+  document.querySelectorAll('.wp-slide').forEach(img => {
+    img.addEventListener('click', e => {
+      e.stopPropagation();
+      open(img.src, img.alt);
+    });
+  });
+
+  // Close on button, backdrop click, or Escape
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+})();
